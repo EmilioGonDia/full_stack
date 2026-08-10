@@ -5,6 +5,7 @@ Thumbs.db
 .vscode/
 .idea/
 
+
 # Dependencias
 **/node_modules/
 
