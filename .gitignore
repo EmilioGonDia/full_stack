@@ -1,0 +1,29 @@
+
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/
+
+# Dependencias
+**/node_modules/
+
+# Archivos de entorno y credenciales (¡MUY IMPORTANTE!)
+**/.env
+**/.env.*
+!**/.env.example
+
+# Archivos de compilación / Build
+**/dist/
+**/build/
+**/.next/
+**/out/
+
+# Pruebas y Cobertura
+**/coverage/
+**/.nyc_output/
+
+# Cachés de frameworks y herramientas
+**/.eslintcache
+**/.turbo/
+**/.parcel-cache/
