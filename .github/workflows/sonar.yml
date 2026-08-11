@@ -19,7 +19,7 @@ jobs:
           fetch-depth: 0  # Desactiva la clonación superficial para obtener el historial completo de Git
 
       - name: Ejecutar análisis de SonarCloud
-        uses: SonarSource/sonarcloud-github-action@v2.3.0
+        uses: SonarSource/sonarcloud-github-action@v3.1.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Token automático de GitHub
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}    # Tu token guardado en Secrets
