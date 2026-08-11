@@ -19,6 +19,9 @@ jobs:
 
       - name: Ejecutar análisis de SonarCloud
         uses: SonarSource/sonarcloud-github-action@v3.1.0
+        with:
+          args: >
+              -Dsonar.sourceEncoding=UTF-8
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Token automático de GitHub
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}    # Tu token guardado en Secrets
