@@ -16,7 +16,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Ejecutar análisis de SonarCloud
-        uses: SonarSource/sonarcloud-github-action@e0f0653f86e9e144a165b4c106450637f9037c6d
+        uses: SonarSource/sonarcloud-github-action@9780842cf0f958f2ae5231c51b7eb4ef4cbfa811
         with:
             args: >
               -Dsonar.sourceEncoding=UTF-8
