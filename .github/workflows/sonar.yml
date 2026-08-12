@@ -13,8 +13,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout del código
-        uses: actions/checkout@v4changes sonar git action
-
+        uses: actions/checkout@v4
+        
       - name: Ejecutar análisis de SonarCloud
         uses: SonarSource/sonarcloud-github-action@v3
         with:
