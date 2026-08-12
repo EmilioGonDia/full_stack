@@ -13,12 +13,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout del código
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0  # Desactiva la clonación superficial para obtener el historial completo de Git
+        uses: actions/checkout@v4changes sonar git action
 
       - name: Ejecutar análisis de SonarCloud
-        uses: SonarSource/sonarcloud-github-action@v4.0.0
+        uses: SonarSource/sonarcloud-github-action@v3
+        with:
+            args: >
+              -Dsonar.sourceEncoding=UTF-8
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Token automático de GitHub
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}    # Tu token guardado en Secrets
